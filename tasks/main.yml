@@ -1,4 +1,9 @@
 ---
+- name: Install bublewrap
+  apt:
+    name: ['bubblewrap']
+    state: present
+
 - name: download...
   become: yes
   become_user: root
